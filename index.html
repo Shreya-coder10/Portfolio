@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shreya Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">SHREYA</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#learning" class="nav-link">Learning Log</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+
+    <!--Toggle -->
+    <li><button id="themeToggle" class="theme-btn">🌙</button></li>
+  </ul>
+</nav>
+
+<!--HOME -->
+<section id="home">
+  <div class="hero">
+    <h1>Hi, I'm Shreya!</h1>
+    <p>
+      I'm a Designer and Web Developer <br>
+      exploring new technologies and expanding my skills.
+    </p>
+  </div>
+</section>
+
+<!-- LEARNING LOG -->
+<section id="learning">
+  <h2>Learning Log</h2>
+
+  <div class="sheet-container">
+    <div class="sheet" data-link="learning1.html">
+      <h3>Week 1</h3>
+      <p>Flexbox and layout foundations.</p>
+    </div>
+
+    <div class="sheet" data-link="learning2.html">
+      <h3>Week 2</h3>
+      <p>Typography and hierarchy.</p>
+    </div>
+
+    <div class="sheet" data-link="learning3.html">
+      <h3>Week 3</h3>
+      <p>Scrollspy and modern UI.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" >
+  <div class="about-container glass-card about-grid" style="width: 100%;align-content: center;">
+
+    <!-- LEFT SIDE (TEXT) -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <div class="about-tag">Design × Development</div>
+
+      <p>
+        I'm currently a BCA student passionate about design and development. 
+        I love building interactive, aesthetic and meaningful digital experiences.
+        My journey is about exploring both visual design and technical problem solving.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE (SKILLS + TIMELINE) -->
+    <div class="about-right">
+
+      <!-- SKILLS -->
+      <div class="skills">
+        <h3>Skills</h3>
+
+        <div class="skill-tags">
+          <span>Figma</span>
+          <span>UI Design</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Learning UX</span>
+        </div>
+      </div>
+
+      <div class="learning-now">
+        <h3>Currently Learning</h3>
+
+    <div class="learning-tags">
+    <span>Advanced CSS</span>
+    <span>UI/UX Principles</span>
+    <span>JavaScript Logic</span>
+    <span>Responsive Design</span>
+    </div>
+      </div>
+      <!-- TIMELINE -->
+      <div class="timeline">
+        <h3>Journey</h3>
+
+        <div class="timeline-item">
+          <span>2025</span>
+          <p>Started exploring design and web development</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>2026</span>
+          <p>Building portfolio and learning advanced UI concepts</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="sheet-container">
+    <div class="sheet" data-link="project1.html">
+      <h3>Poster Exploration</h3>
+      <p>Visual design and mood experiments.</p>
+    </div>
+
+    <div class="sheet" data-link="project2.html">
+      <h3>App Redesign</h3>
+      <p>UX thinking and interface structure.</p>
+    </div>
+
+    <div class="sheet" data-link="project3.html">
+      <h3>Portfolio</h3>
+      <p>Design + development journey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="contact-container glass-card contact-card">
+    <h2>Contact</h2><br><br>
+    <p>Email: shreyakumari4233@gmail.com</p><br>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shreya-7aba5a344" target="_blank"> https://www.linkedin.com/in/shreya-7aba5a344</a></p><br>
+    <p>GitHub: <a href="https://github.com/Shreya-coder10" target="_blank"> https://github.com/Shreya-coder10</a></p><br><br>
+    <p>Let’s build something meaningful together!</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
