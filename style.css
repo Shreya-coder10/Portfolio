@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+html, body {
+  max-width: 100%;
+}
+
 /* ================= TYPOGRAPHY ================= */
 :root {
   --font-heading: "Playfair Display", serif;
@@ -147,7 +155,7 @@ h2 {
 /* ================= SECTIONS ================= */
 section {
   min-height: 100vh;
-  padding-top: 120px;
+  padding: 120px 20px 60px; 
   position: relative;
   overflow-x: hidden;
   overflow-y: visible;
@@ -200,6 +208,8 @@ section > * {
 }
 
 /* ================= HERO ================= */
+@media (max-width: 768px) {
+
 .hero {
   max-width: 800px;
 }
@@ -215,7 +225,30 @@ section > * {
   opacity: 0.9;
 }
 
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
+
 /* ================= ABOUT ================= */
+@media (max-width: 768px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-container {
+    margin: 0;
+    padding: 25px;
+  }
+
+
 .about-container {
   max-width: 1100px;  
   width: 100%;
@@ -250,7 +283,7 @@ section > * {
   line-height: 1.9;
   opacity: 0.9;
 }
-
+}
 /* ================= CARD GLOW ================= */
 
 .glass-card {
@@ -320,6 +353,15 @@ section > * {
 }
 
 /* ================= SKILL TAGS ================= */
+@media (max-width: 768px) {
+
+  .skill-tags span,
+  .learning-tags span {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+
 
 .skill-tags {
   display: flex;
@@ -419,7 +461,7 @@ section > * {
   opacity: 1;
   transform: translateY(0);
 }
-
+}
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
@@ -436,6 +478,18 @@ section > * {
 } */
 
 /* ================= CONTACT ================= */
+@media (max-width: 768px) {
+
+  .contact-container,
+  .about-container {
+    margin-left: 0;
+  }
+
+  h2 {
+    margin-left: 0;
+  }
+
+
 .contact-container {
   margin-left: 80px;
   font-size: 1.1rem;
@@ -474,7 +528,7 @@ section > * {
   background: rgba(255,255,255,0.3);
   transform: translateY(-2px);
 }
-
+}
 /* ================= HEADINGS ================= */
 h2 {
   margin-left: 40px;
@@ -483,6 +537,22 @@ h2 {
 }
 
 /* ================= HORIZONTAL SHEETS ================= */
+@media (max-width: 768px) {
+
+  .sheet-container {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+.sheet-container {
+  scroll-padding: 20px;
+}
+  .sheet {
+    min-width: 220px;
+    height: 280px;
+    padding: 18px;
+  }
+
+
 .sheet-container {
   display: flex;
   gap: 30px;
@@ -512,6 +582,7 @@ h2 {
 
 .sheet:hover {
   transform: translateY(-10px) scale(1.04);
+}
 }
 /* ================= GLOW HOVER ================= */
 
@@ -554,13 +625,22 @@ h2 {
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
-  .navbar {
-    padding: 0 20px;
+    .navbar {
+    padding: 0 15px;
+    height: 60px;
   }
 
   .nav-links {
-    gap: 16px;
+    gap: 10px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    white-space: nowrap;
   }
+
+  .logo {
+    font-size: 0.9rem;
+  }
+
 
   #home {
     padding: 100px 30px;
@@ -579,6 +659,7 @@ h2 {
     min-width: 250px;
   }
 }
+
 
 /* ================= FLOATING SHAPES ================= */
 
